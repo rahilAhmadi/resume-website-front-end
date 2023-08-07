@@ -283,6 +283,7 @@ header .header-description .desc a:hover {
 .sample {
   display: flex;
   flex-wrap:wrap;
+  justify-content: center;
 }
 .sample-me h1 {
   font-size: 40px;
@@ -319,12 +320,12 @@ header .header-description .desc a:hover {
   cursor: pointer;
 }
 .sample-box .sample-img-box.active img {
-    top: 50px;
-    right: 50px;
-    bottom: 50px;
-    left: 50px;
-    width: calc(100% - 100px);
-    height: calc(100% - 100px);
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
 }
 .sample-box .sample-img-box img {
     position: absolute;
@@ -344,9 +345,9 @@ header .header-description .desc a:hover {
 } */
 .sample-box .sample-img-box .content{
   position: absolute;
-  bottom: 50px;
-  right: 50px;
-  left: 50px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
   background-color: rgba(0, 0, 0, 0.9);
   color: #fff;
   opacity: 0;
@@ -396,6 +397,28 @@ header .header-description .desc a:hover {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   font-weight: 500;
+}
+.sample-box .sample-img-box h2{
+  opacity: 0;
+  visibility: hidden;
+}
+.sample-box .sample-img-box.active h2{
+  z-index: 999;
+    opacity: 1;
+    visibility: visible;
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+    letter-spacing: 5px;
+    font-size: 18px;
+    height: 60px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .sample-box .sample-img-box .menu_header{
   display: block;

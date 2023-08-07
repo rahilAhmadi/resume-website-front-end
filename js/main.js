@@ -20,5 +20,4 @@ window.addEventListener('scroll',()=>{
 const imgBox=document.querySelectorAll('.sample-img-box');
 imgBox.forEach(popup=>popup.addEventListener('click',function(){
     popup.classList.toggle('active');
-    header_menu.style.display="none";
 }))
