@@ -22,6 +22,7 @@ header {
   background-size: cover;
   position: relative;
   background-attachment: fixed;
+  z-index: 999;
 }
 header .overly {
   position: absolute;
