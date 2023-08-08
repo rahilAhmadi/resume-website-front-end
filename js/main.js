@@ -21,3 +21,27 @@ const imgBox=document.querySelectorAll('.sample-img-box');
 imgBox.forEach(popup=>popup.addEventListener('click',function(){
     popup.classList.toggle('active');
 }))
+
+//smooth scroll
+
+const section=document.querySelectorAll('section');
+const li=document.querySelectorAll('nav ul li');
+let current;
+
+window.addEventListener('scroll',function(){
+    section.forEach(sec=>{
+        const sectionTop=sec.offsetTop;
+        const secctionHeight=sec.clientHeight;
+        
+        if(this.pageYOffset>=sectionTop-secctionHeight/3){
+            current=sec.getAttribute('id')
+        }
+    })
+    console.log(current)
+    li.forEach(item=>{
+        item.classList.remove('active');
+        if(item.classList.contains(current)){
+            item.classList.add('active');
+        }
+    })
+})

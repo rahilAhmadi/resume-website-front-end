@@ -3,7 +3,9 @@
   font-family: sans;
   src: url(../font/IRANSansWeb_Light.woff2);
 }
-
+html{
+  scroll-behavior: smooth;
+}
 * {
   padding: 0;
   margin: 0;
@@ -69,8 +71,11 @@ header nav ul li a {
 header nav ul li a:hover {
   border-bottom: 2px solid #fff;
 }
-.Active {
-  border-bottom: 2px solid #fff;
+nav ul li.active{
+  background-color: crimson;
+}
+nav ul li.active a{
+  color: #fff;
 }
 .menu_header.sticky{
   position: fixed;
@@ -82,6 +87,8 @@ header nav ul li a:hover {
   -ms-border-radius: 0;
   -o-border-radius: 0;
   margin-top: 0;
+  background-color: #000;
+  z-index: 999;
 }
 .black_them .menu_item{
   color: #000;
