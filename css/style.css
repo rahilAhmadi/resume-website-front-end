@@ -60,7 +60,13 @@ header nav ul {
 }
 header nav ul li{
   width: 15%;
-  padding: 20px 15px;
+  padding: 18px 15px;
+  text-align: center;
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
 }
 header nav ul li a {
   color: #fff;
@@ -68,11 +74,19 @@ header nav ul li a {
   transition: 0.7s;
   padding-bottom: 20px;
 }
+.black_them .menu_item{
+  color: #000;
+}
 header nav ul li a:hover {
   border-bottom: 2px solid #fff;
 }
 nav ul li.active{
-  background-color: crimson;
+  background-color: #ee5b2e;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 nav ul li.active a{
   color: #fff;
@@ -89,9 +103,6 @@ nav ul li.active a{
   margin-top: 0;
   background-color: #000;
   z-index: 999;
-}
-.black_them .menu_item{
-  color: #000;
 }
 .black_them.menu_header{
   background-color: #fff;
