@@ -127,6 +127,26 @@ header .desc {
 header .header-description .desc h1 {
   font-size: 65px;
   font-weight: bold;
+  color: #ee2e2e;
+}
+header .header-description .desc h1::after{
+  content: '';
+  border-right: 4px solid #ee2e2e;
+  margin-right: 5px;
+  animation:  blink .5s infinite ease;
+  -webkit-animation:  blink .5s infinite ease;
+}
+@keyframes blink{
+  0%{
+      opacity: 0;
+  }
+  100%{
+      opacity: 1;
+  }
+}
+h2{
+  color: #fff;
+  font-size: 40px;
 }
 header .header-description .desc p {
   font-size: 20px;

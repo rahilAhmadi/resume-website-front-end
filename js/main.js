@@ -37,7 +37,6 @@ window.addEventListener('scroll',function(){
             current=sec.getAttribute('id')
         }
     })
-    console.log(current)
     li.forEach(item=>{
         item.classList.remove('active');
         if(item.classList.contains(current)){
@@ -45,3 +44,32 @@ window.addEventListener('scroll',function(){
         }
     })
 })
+
+
+//--------letter compliting for h1 header------
+const text=['طراح وب','برنامه نویس وب','فرانت اند دولوپر'];
+let count=0;
+let index=0;
+let currrentText='';
+let letter='';
+
+//self invok function
+(function type(){
+    console.log('run shodamm')
+    if(count===text.length){
+        count=0;
+    }
+
+
+    currrentText=text[count];
+    letter=currrentText.slice(0,++index);
+
+    document.querySelector('.type').textContent=letter;
+
+    if(letter.length==currrentText.length){
+        count++;
+        index=0;
+    }
+
+    setTimeout(type, 300);
+})()
