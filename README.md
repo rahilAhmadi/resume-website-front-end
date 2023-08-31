@@ -6,7 +6,7 @@
 personal site (resume) -Frone End with html , css and javascript;
 ## Demo
 
-
+![personal site](https://github.com/rahilAhmadi/resume-website-front-end/assets/67064503/44bfd5bb-e069-4196-8ee1-5236be94ce98)
 ## Prerequisites
 
 Before you begin, ensure you have met the following requirements:
